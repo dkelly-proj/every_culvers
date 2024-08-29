@@ -2,6 +2,7 @@
 *ec_env*
 scratch.py
 config.py
+cron.log
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
