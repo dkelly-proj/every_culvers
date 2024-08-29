@@ -12,7 +12,7 @@ engine = create_engine(DATABASE_URL)
 
 # Query the database to get all locations
 query = """
-SELECT description, street, city, state, latitude, longitude, flavor_of_the_day
+SELECT description, street, city, state, latitude, longitude, flavor_of_the_day, open_date
 FROM culvers_locations
 """
 df = pd.read_sql(query, con=engine)
@@ -30,7 +30,7 @@ for index, row in df.iterrows():
         fill_color='#005599',
         fill_opacity=0.7,
         popup=folium.Popup(
-            f"{row['description']}<br>{row['street']}, {row['city']}, {row['state']}<br>Flavor of the Day: {row['flavor_of_the_day']}",
+            f"{row['description']}<br>{row['street']}, {row['city']}, {row['state']}<br>Flavor of the Day: {row['flavor_of_the_day']}<br>Date Opened: {row['open_date']}",
             max_width=300),
     ).add_to(m)
 
