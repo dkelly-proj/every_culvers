@@ -49,7 +49,7 @@
             width: 100%;
             max-width: 1000px;  /* Constrain max width on large screens */
             height: 0;
-            padding-bottom: 60%; /* Aspect ratio of the map */
+            padding-bottom: 50%; /* Aspect ratio of the map */
             padding-top: 10%;
             position: relative;
         }
@@ -60,9 +60,17 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 50%;
+            height: 100%;
             border: none;
         }
+
+        /* Media query for mobile devices */
+        @media (max-width: 768px) {
+            #map-container {
+                padding-bottom: 90%; /* Adjust aspect ratio for mobile */
+            }
+        }
+
     </style>
 </head>
 <body>
