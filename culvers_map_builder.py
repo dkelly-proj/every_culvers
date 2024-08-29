@@ -12,8 +12,13 @@ engine = create_engine(DATABASE_URL)
 
 # Query the database to get all locations
 query = """
-SELECT description, street, city, state, latitude, longitude, flavor_of_the_day, open_date
-FROM culvers_locations
+WITH LatestSnapshot AS (
+    SELECT MAX(snapshot_date) AS max_snapshot_date
+    FROM culvers_locations)
+
+SELECT description, street, city, state, latitude, longitude, flavor_of_the_day, open_date, snapshot_date, max_snapshot_date
+FROM culvers_locations, LatestSnapshot
+WHERE snapshot_date = max_snapshot_date;
 """
 df = pd.read_sql(query, con=engine)
 
