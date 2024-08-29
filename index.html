@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culver's Locations Map</title>
+    <style>
+        /* Basic styling for the body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Title styling */
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: #005599;
+        }
+
+        /* Subtitle text styling */
+        p {
+            text-align: left;
+            color: #333;
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        /* Link styling */
+        a {
+            text-align: left;
+            color: #005599;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Map container to ensure responsiveness */
+        #map-container {
+            width: 100%;
+            max-width: 1000px;  /* Constrain max width on large screens */
+            height: 0;
+            padding-bottom: 60%; /* Aspect ratio of the map */
+            padding-top: 10%;
+            position: relative;
+        }
+
+        /* Map iframe styling */
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Every Culver's</h1>
+
+    <p>This map displays the location of every Culver's in the United States, and is updated daily.</p>
+
+    <a href="https://github.com/dkelly-proj/every_culvers" target="_blank">Click here to see the code!</a>
+
+    <div id="map-container">
+        <iframe src="culvers_locations_map.html"></iframe>
+    </div>
+  
+</body>
+</html>
