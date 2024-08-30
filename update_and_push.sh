@@ -6,6 +6,9 @@ source ~/every_culvers/ec_env/bin/activate
 # Navigate to the project directory
 cd ~/every_culvers
 
+# Pull latest changes from GitHub
+git pull --rebase
+
 # Run the data retrieval script
 python3 culvers_locations_retrieval.py
 
