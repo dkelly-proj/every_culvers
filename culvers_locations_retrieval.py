@@ -16,8 +16,8 @@ us_states = [
     "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", 
     "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", 
     "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "NC", 
-    "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", 
-    "South Carolina", "SC", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", 
+    "North Dakota", "ND", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", 
+    "South Carolina", "SC", "South Dakota", "SD", "Tennessee", "Texas", "Utah", "Vermont", 
     "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"
 ]
 
